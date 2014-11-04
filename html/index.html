@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>OhDeer Games! Tutorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="menu">
+            <a href="#layer1" class="menu__item">1</a>
+
+            <a href="#layer2" class="menu__item">2</a>
+
+            <a href="#layer3" class="menu__item">3</a>
+
+            <a href="#layer4" class="menu__item">4</a>
+
+            <a href="#layer5" class="menu__item">5</a>
+
+            <a href="#layer6" class="menu__item">6</a>
+        </nav>
+    </header>
+
+    <footer class="footer">
+        &copy; 2014 OhDeer Games. All rights reserved.
+    </footer>
+
+    <div class="wrapper">
+        <div class="environment">
+            <div class="scene">
+
+                <div id="layer1" class="layer" data-depth="0">
+                    <h1>Layer 1</h1>
+                </div>
+
+                <div id="layer2" class="layer" data-depth="500">
+                    <h1>Layer 2</h1>
+                </div>
+
+                <div id="layer3" class="layer" data-depth="1000">
+                    <h1>Layer 3</h1>
+                </div>
+
+                <div id="layer4" class="layer" data-depth="1500">
+                    <h1>Layer 4</h1>
+                </div>
+
+                <div id="layer5" class="layer" data-depth="2000">
+                    <h1>Layer 5</h1>
+                </div>
+
+                <div id="layer6" class="layer" data-depth="2500">
+                    <h1>Layer 6</h1>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="scene__depth"></div>
+
+    <script src="js/libs/jquery-1.10.2.min.js"></script>
+    <script src="js/libs/underscore-min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/zoom.js"></script>
+
+</body>
+</html>

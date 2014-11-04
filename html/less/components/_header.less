@@ -1,0 +1,28 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+
+// menu
+
+.menu {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.menu__item {
+    display: block;
+    float: left;
+    text-decoration: none;
+    padding: 10px;
+
+    &:hover,
+    &.menu__item--active {
+        color: #F704C7;
+    }
+}

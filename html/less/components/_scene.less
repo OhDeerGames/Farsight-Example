@@ -1,0 +1,74 @@
+// background
+
+body {
+    background: #000;
+}
+
+.wrapper,
+.environment,
+.scene,
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    position: fixed;
+    z-index: 10;
+}
+
+.environment {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    .transform(perspective(500px));
+    -webkit-perspective: 500px;
+    -moz-perspective: 500px;
+    -ms-perspective: 500px;
+    -o-perspective: 500px;
+    perspective: 500px;
+    -webkit-perspective-origin: center center;
+    -moz-perspective-origin: center center;
+    -ms-perspective-origin: center center;
+    -o-perspective-origin: center center;
+    perspective-origin: center center;
+}
+
+.scene {
+    top: 0;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.scene__depth {
+    position: relative;
+    z-index: 0;
+}
+
+.layer {
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 300px;
+        margin: -150px 0 0 -150px;
+        font-size: 10px;
+        color: #fff;
+        padding: 5px;
+    }
+}
+
+#layer1 h1 { .box-shadow(0 0 0 600px #4CC1E3); }
+#layer2 h1 { .box-shadow(0 0 0 600px #4BA0BF); }
+#layer3 h1 { .box-shadow(0 0 0 600px #497F9A); }
+#layer4 h1 { .box-shadow(0 0 0 600px #465D76); }
+#layer5 h1 { .box-shadow(0 0 0 600px #46455B); }
+#layer6 h1 { .box-shadow(0 0 0 600px #442B3F); }
